@@ -1,0 +1,28 @@
+#define ledRosso 13
+#define ledGiallo 12
+#define ledVerde 8
+
+void setup(){
+    pinMode(13, OUTPUT);
+    pinMode(12,OUTPUT);
+    pinMode(8,OUTPUT);
+}
+
+void loop(){
+ 	digitalWrite(13,LOW);
+  	delay(500);
+	digitalWrite(8,HIGH);
+   	delay(3000);
+  	digitalWrite(8,LOW);
+  	delay(500);
+  	digitalWrite(12,HIGH);
+  	delay(1000);
+    digitalWrite(12,LOW);
+  	delay(500);
+  	digitalWrite(13,HIGH);
+  	delay(2000);
+  	
+  	
+
+  
+}
