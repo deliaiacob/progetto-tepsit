@@ -1,0 +1,25 @@
+#define ledRosso 13
+#define ledGiallo 12
+#define ledVerde 8
+#define button 4
+
+void setup() {
+  pinMode(ledRosso, OUTPUT);
+  pinMode(ledGiallo, OUTPUT);
+  pinMode(ledVerde, OUTPUT);
+  pinMode(button, INPUT);
+}
+
+void loop() {
+  int buttonState = digitalRead(button);
+
+  if (buttonState == HIGH) {
+    digitalWrite(ledRosso, HIGH);
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledGiallo, LOW);
+  } else {
+    digitalWrite(ledVerde, HIGH);
+    digitalWrite(ledRosso, LOW);
+    digitalWrite(ledGiallo, LOW);
+  }
+}
